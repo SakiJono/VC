@@ -30,7 +30,7 @@ const Peer = window.Peer;
 
 
 
-// メタデータの格納
+  // メタデータの格納
   // meta.innerText = `
   //   UA: ${navigator.userAgent}
   //   SDK: ${sdkSrc ? sdkSrc.src : 'unknown'}
@@ -106,7 +106,7 @@ const Peer = window.Peer;
 
 
     // ここにAPI keyを入れてね★
-    key: '1a50df5c-005b-4e50-be24-40dfabe6415c',
+    key: '1b74af05-ac7f-4b24-a6ff-dedb7ce9ee54',
     debug: 3,
   }));
 
@@ -203,12 +203,12 @@ const Peer = window.Peer;
         document.getElementById('js-remote-streams').style.filter = 'blur(2px)';
       } else if (data == 'Change filter to beautify') {
         document.getElementById('js-remote-streams').style.filter = 'contrast(110%) saturate(130%) brightness(130%)';
-      } else if(data == 'Cheers!'){
-        const beerStyle = document.getElementById('beeranime');  
-        if (beerStyle.classList.contains('setDisp')){
+      } else if (data == 'Cheers!') {
+        const beerStyle = document.getElementById('beeranime');
+        if (beerStyle.classList.contains('setDisp')) {
           beerStyle.style.display = 'none';
           beerStyle.classList.toggle('setDisp');
-        }else{
+        } else {
           beerStyle.style.display = 'block';
           beerStyle.classList.toggle('setDisp');
         }
@@ -301,10 +301,10 @@ const Peer = window.Peer;
       room.send(valueCSS);
       console.log(`ここはCSS${valueCSS}`);
 
-      if (beerStyle.classList.contains('setDisp')){
+      if (beerStyle.classList.contains('setDisp')) {
         beerStyle.style.display = 'none';
         beerStyle.classList.toggle('setDisp');
-      }else{
+      } else {
         beerStyle.style.display = 'block';
         beerStyle.classList.toggle('setDisp');
       }
